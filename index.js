@@ -9,7 +9,8 @@ app.use(express.static(__dirname + "/dosyalar"));
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-mongoose.connect("mongodb+srv://omerasim:1234@cluster0.qhgs4.mongodb.net/Cluster0?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://omerasim:1234@cluster0.qhgs4.mongodb.net/Cluster0?retryWrites=true&w=majority",
+ {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -71,5 +72,5 @@ if(port == "" || port == null){
   port = 5000;
 }
 app.listen(port, function(){
-  console.log("port numarasi 1 : " + port);
+  console.log("port numarasi 123 : " + port);
 });
